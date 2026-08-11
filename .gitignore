@@ -1,0 +1,38 @@
+#.folder/  with / every files is ignored
+#*.py  ignore any file ending in .pyg           
+
+# Virtual environment
+.venv/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Local environment variables and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# VS Code local settings
+.vscode/
+
+# Local datasets and conversation state
+Database/*
+!Database/.gitkeep
+
+# Temporary conversation identifiers
+Azure_Notebooks/conversation_id.txt
+Azure_Notebooks/last_response_id.txt
+
+# Earlier development notebooks
+Azure_Notebooks/FirstJupyterAzure.ipynb
+Azure_Notebooks/02FirstJupyterAzure.ipynb
+
+# Logs and operating-system files
+*.log
+.DS_Store
+Thumbs.db
