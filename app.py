@@ -1,3 +1,4 @@
+#Libraries
 import json
 import os
 
@@ -23,7 +24,7 @@ AGENT_VERSION = os.getenv("FOUNDRY_AGENT_VERSION", DEFAULT_AGENT_VERSION)
 
 
 
-
+#Finding the project root directory by looking for a "Database" folder
 def find_project_root(start: Path | None = None) -> Path:
     """Find the nearest parent containing Database or .venv."""
     current = (start or Path.cwd()).resolve()
